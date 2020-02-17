@@ -44,10 +44,10 @@ module Pod
       puts ""
 
       Dir.chdir("Example") do
-        system "pod install"
+        # system "pod install"
       end
 
-      `git add Example/#{pod_name}.xcodeproj/project.pbxproj`
+      # `git add Example/#{pod_name}.xcodeproj/project.pbxproj`
       `git commit -m "Initial commit"`
     end
 
